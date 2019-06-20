@@ -13,6 +13,12 @@
 		A79185CA1C30694E001236A6 /* RCTGoogleAnalyticsBridge.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A79185C91C30694E001236A6 /* RCTGoogleAnalyticsBridge.h */; };
 		A79185CC1C30694E001236A6 /* RCTGoogleAnalyticsBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A79185CB1C30694E001236A6 /* RCTGoogleAnalyticsBridge.m */; };
 		A79185DE1C3070E8001236A6 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A79185DD1C3070E8001236A6 /* libGoogleAnalyticsServices.a */; };
+		EBBB59FD22BBD1D7007DE5E1 /* RCTGoogleTagManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A710AAE21CC640E40085DAC1 /* RCTGoogleTagManagerBridge.m */; };
+		EBBB59FE22BBD1D7007DE5E1 /* GoogleAnalyticsPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = A708FC191F6BA89900211FC3 /* GoogleAnalyticsPayload.m */; };
+		EBBB59FF22BBD1D7007DE5E1 /* RCTGoogleAnalyticsSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = A708FC1F1F6BB4D200211FC3 /* RCTGoogleAnalyticsSettings.m */; };
+		EBBB5A0022BBD1D7007DE5E1 /* RCTGoogleAnalyticsBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A79185CB1C30694E001236A6 /* RCTGoogleAnalyticsBridge.m */; };
+		EBBB5A0222BBD1D7007DE5E1 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A79185DD1C3070E8001236A6 /* libGoogleAnalyticsServices.a */; };
+		EBBB5A0422BBD1D7007DE5E1 /* RCTGoogleAnalyticsBridge.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A79185C91C30694E001236A6 /* RCTGoogleAnalyticsBridge.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +29,16 @@
 			dstSubfolderSpec = 16;
 			files = (
 				A79185CA1C30694E001236A6 /* RCTGoogleAnalyticsBridge.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB5A0322BBD1D7007DE5E1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				EBBB5A0422BBD1D7007DE5E1 /* RCTGoogleAnalyticsBridge.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +70,7 @@
 		C9C74AC51CBD4E9F00F3BD12 /* TAGDataLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGDataLayer.h; sourceTree = "<group>"; };
 		C9C74AC61CBD4E9F00F3BD12 /* TAGLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGLogger.h; sourceTree = "<group>"; };
 		C9C74AC71CBD4E9F00F3BD12 /* TAGManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAGManager.h; sourceTree = "<group>"; };
+		EBBB5A0822BBD1D7007DE5E1 /* libRCTGoogleAnalyticsBridge-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRCTGoogleAnalyticsBridge-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +79,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A79185DE1C3070E8001236A6 /* libGoogleAnalyticsServices.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB5A0122BBD1D7007DE5E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBB5A0222BBD1D7007DE5E1 /* libGoogleAnalyticsServices.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				A79185C61C30694E001236A6 /* libRCTGoogleAnalyticsBridge.a */,
+				EBBB5A0822BBD1D7007DE5E1 /* libRCTGoogleAnalyticsBridge-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +169,23 @@
 			productReference = A79185C61C30694E001236A6 /* libRCTGoogleAnalyticsBridge.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		EBBB59FB22BBD1D7007DE5E1 /* RCTGoogleAnalyticsBridge-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBBB5A0522BBD1D7007DE5E1 /* Build configuration list for PBXNativeTarget "RCTGoogleAnalyticsBridge-tvOS" */;
+			buildPhases = (
+				EBBB59FC22BBD1D7007DE5E1 /* Sources */,
+				EBBB5A0122BBD1D7007DE5E1 /* Frameworks */,
+				EBBB5A0322BBD1D7007DE5E1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RCTGoogleAnalyticsBridge-tvOS";
+			productName = RCTGoogleAnalyticsBridge;
+			productReference = EBBB5A0822BBD1D7007DE5E1 /* libRCTGoogleAnalyticsBridge-tvOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,6 +205,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = A79185BD1C30694E001236A6;
@@ -170,6 +214,7 @@
 			projectRoot = "";
 			targets = (
 				A79185C51C30694E001236A6 /* RCTGoogleAnalyticsBridge */,
+				EBBB59FB22BBD1D7007DE5E1 /* RCTGoogleAnalyticsBridge-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +228,17 @@
 				A708FC1A1F6BA89900211FC3 /* GoogleAnalyticsPayload.m in Sources */,
 				A708FC201F6BB4D200211FC3 /* RCTGoogleAnalyticsSettings.m in Sources */,
 				A79185CC1C30694E001236A6 /* RCTGoogleAnalyticsBridge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBB59FC22BBD1D7007DE5E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBB59FD22BBD1D7007DE5E1 /* RCTGoogleTagManagerBridge.m in Sources */,
+				EBBB59FE22BBD1D7007DE5E1 /* GoogleAnalyticsPayload.m in Sources */,
+				EBBB59FF22BBD1D7007DE5E1 /* RCTGoogleAnalyticsSettings.m in Sources */,
+				EBBB5A0022BBD1D7007DE5E1 /* RCTGoogleAnalyticsBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +390,60 @@
 			};
 			name = Release;
 		};
+		EBBB5A0622BBD1D7007DE5E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/node_modules/react-native/React",
+					"$(SRCROOT)/../../example/node_modules/react-native/React/**",
+					"$(SRCROOT)/../../../react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/google-analytics-lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EBBB5A0722BBD1D7007DE5E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/node_modules/react-native/React",
+					"$(SRCROOT)/../../example/node_modules/react-native/React/**",
+					"$(SRCROOT)/../../../react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/google-analytics-lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +461,15 @@
 			buildConfigurations = (
 				A79185D01C30694E001236A6 /* Debug */,
 				A79185D11C30694E001236A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBBB5A0522BBD1D7007DE5E1 /* Build configuration list for PBXNativeTarget "RCTGoogleAnalyticsBridge-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBB5A0622BBD1D7007DE5E1 /* Debug */,
+				EBBB5A0722BBD1D7007DE5E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

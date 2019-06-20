@@ -47,18 +47,6 @@ RCT_EXPORT_METHOD(openContainerWithId:(NSString *)containerId
                                  notifier:self];
 }
 
-RCT_REMAP_METHOD(refreshContainer,
-                 refreshContainerWithResolver:(RCTPromiseResolveBlock)resolve
-                 rejecter:(RCTPromiseRejectBlock)reject)
-{
-    if (self.container != nil) {
-        [self.container refresh];
-        resolve(@YES);
-    } else {
-        reject(E_CONTAINER_NOT_OPENED, nil, RCTErrorWithMessage(@"The container has not been opened. You must call openContainerWithId(..)"));
-    }
-}
-
 RCT_EXPORT_METHOD(stringForKey:(NSString *)key
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
@@ -135,10 +123,8 @@ RCT_EXPORT_METHOD(setVerboseLoggingEnabled:(BOOL)enabled
 - (void)containerAvailable:(TAGContainer *)container {
     dispatch_async(_methodQueue, ^{
         self.container = container;
-        if (self.openContainerResolver) {
-            self.openContainerResolver(@YES);
-            self.openContainerResolver = nil;
-        }
+        self.openContainerResolver(@YES);
+        self.openContainerResolver = nil;
     });
 }
 
